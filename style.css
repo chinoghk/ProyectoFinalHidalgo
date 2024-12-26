@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#IconoPJ{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d9d9d9;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,2);
+    z-index: 1000;
+}
+
+#IconoPJ img{
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#pjSeleccion{
+    position: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #E0002B;
+    top: 0;
+    right: 0%;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    overflow-y: auto;
+}
+
+#boton-final {
+    position: fixed;
+    bottom: 0;
+    background-color: #d9d9d9;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4cccc;
+    color: black;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.main{
+    padding: 20px;
+}
+
+.pjElegido{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ea9999;
+    gap: 100px;
+    border-radius: 10px;
+}
+
+.accordion{
+    width: 300px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.a-section{
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+}
+
+.a-section:hover{
+    background-color: #555;
+}
+
+.a-content{
+    padding: 0 15px;
+    background-color: #222;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.a-content p{
+    margin: 10px 0;
+}
+
+.active .a-content{
+    max-height: 150px;
+}
+
+/* Personaje seleccion*/
+
+.personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.personaje .img{
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+}
+
+
+@media (min-width: 768px){
+    .pjElegido{
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    #pjSeleccion{
+        width: 400px;
+    }
+
+}

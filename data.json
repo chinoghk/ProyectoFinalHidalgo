@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Arquero",
+        "categoria": "Ataque",
+        "img": "https://neverland.game-ark.com/images/role_small_01.jpg",
+        "puntos": "Ataque: 25, Vida: 5, Defensa: 5",
+        "descripcion": "Es una clase de daño a distancia a costa de su poca defensa y vida básica baja."
+    },
+    {
+        "id": 2,
+        "nombre": "Guerrero",
+        "categoria": "Defensa",
+        "img": "https://neverland.game-ark.com/images/role_small_02.jpg",
+        "puntos": "Ataque: 5, Vida: 15, Defensa: 15",
+        "descripcion": "Repartidor de daños cuerpo a cuerpo experimentado y bastante resistente al mismo tiempo."
+    },
+    {
+        "id": 3,
+        "nombre": "Curandero",
+        "categoria": "Soporte",
+        "img": "https://neverland.game-ark.com/images/role_small_03.jpg",
+        "puntos": "Ataque: 10, Vida: 10, Defensa: 15",
+        "descripcion": "Magos rúnicos que hacen uso de los elementos de la naturaleza para ayudar a sus aliados."
+    }
+]
